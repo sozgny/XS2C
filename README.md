@@ -9,7 +9,7 @@ XS2C is a framework for anomaly detection and root cause diagnosis in multivaria
 | File | Description |
 |---|---|
 | `all_functions.py` | All model definitions, training, testing, and evaluation functions |
-| `xs2c_detection.ipynb` | Detection component — trains the GNN model and evaluates anomaly detection performance |
+| `xs2c_detection.ipynb` | Detection component — trains the GNN model, evaluates anomaly detection performance, fine-tunes a fault model |
 | `xs2c_diagnosis.ipynb` | Diagnosis component — identifies faulty sensors and ranks root cause hypotheses |
 | `swat_best_model.pt` | Pretrained model weights for the SWaT dataset |
 | `swat_best_params.json` | Best hyperparameters found for the SWaT dataset |
@@ -26,24 +26,22 @@ XS2C is a framework for anomaly detection and root cause diagnosis in multivaria
 
 Both train and test files must be CSV files with the following structure:
 
-- **Index column**: integer timestamps starting from 0 (0, 1, 2, ...)
+- **Timestamp column**: integer timestamps starting from 0 (0, 1, 2, ...)
 - **Feature columns**: one column per sensor/variable
 - **Attack column** (test file only): binary column named `attack` with values 0 (normal) or 1 (anomaly)
 
 Example (`test.csv`):
 
 ```
-,sensor_1,sensor_2,...,sensor_n,attack
+timestamp,sensor_1,sensor_2,...,sensor_n,attack
 0,0.12,0.34,...,0.56,0
 1,0.13,0.35,...,0.57,0
 2,0.89,0.91,...,0.78,1
 ...
 ```
-
 The train file does not need an `attack` column. If present, it will be automatically dropped.
 
 ### Variable list (`list.txt`)
-
 A plain text file with one variable/sensor name per line, in the same order as the CSV columns:
 
 ```
