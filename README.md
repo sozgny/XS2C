@@ -69,6 +69,36 @@ Pretrained model weights are provided for both datasets for exact reproduction o
 > **Note on reproducibility:** Detection performance metrics are stable across runs with `random_seed=42`. However, due to non-determinism in PyTorch's data loading, retraining from scratch may yield slightly different symptom identification results. For exact paper results, use the provided pretrained weights.
 
 ---
+## Datasets
+
+### SWaT (Secure Water Treatment)
+The SWaT dataset is not publicly available and must be requested from the iTrust research centre at the Singapore University of Technology and Design (SUTD):
+- Request access: [https://itrust.sutd.edu.sg/](https://itrust.sutd.edu.sg/)
+
+### TEP (Tennessee Eastman Process)
+The TEP dataset was generated using the simulator based on the original Fortran code by J.J. Downs and E.F. Vogel (1993), with modifications by E.L. Russell, L.H. Chiang, and R.D. Braatz:
+- Simulator: [https://github.com/jkitchin/tennessee-eastman-profbraatz](https://github.com/jkitchin/tennessee-eastman-profbraatz)
+
+Please cite the original TEP works if you use this simulator:
+
+```bibtex
+@article{downs1993plant,
+  title={A plant-wide industrial process control problem},
+  author={Downs, James J and Vogel, Ernest F},
+  journal={Computers \& Chemical Engineering},
+  volume={17},
+  number={3},
+  pages={245--255},
+  year={1993}
+}
+
+@book{russell2000data,
+  title={Data-driven Techniques for Fault Detection and Diagnosis in Chemical Processes},
+  author={Russell, Evan L and Chiang, Leo H and Braatz, Richard D},
+  publisher={Springer-Verlag},
+  year={2000}
+}
+```
 
 ## Requirements
 
