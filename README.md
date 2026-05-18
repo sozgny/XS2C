@@ -11,6 +11,8 @@ XS2C is a framework for anomaly detection and root cause diagnosis in multivaria
 | `all_functions.py` | All model definitions, training, testing, and evaluation functions |
 | `xs2c_detection.ipynb` | Detection component — trains the GNN model, evaluates anomaly detection performance, then fine-tunes a fault model |
 | `xs2c_diagnosis.ipynb` | Diagnosis component — using identified symptoms, generates ranked diagnoses of faulty components |
+| `graph_construction.ipynb` | Graph construction notebook — builds causal graphs using Neural Granger Causality |
+| `ngc.py` | Neural Granger Causality implementation with some util functions|
 | `swat_best_model.pt` | Pretrained model weights for the SWaT dataset |
 | `swat_best_params.json` | Best hyperparameters found for the SWaT dataset |
 | `swat_edge_index.pt` | Learned causal graph (edge index) for the SWaT dataset |
