@@ -86,6 +86,7 @@ sensor_n
 The causal graphs (`edge_index.pt`) were constructed using Neural Granger Causality (NGC). 
 The implementation is based on the original NGC code with additional modifications:
 - Original code: [https://github.com/iancovert/Neural-GC](https://github.com/iancovert/Neural-GC)
+- The original NGC implementation was extended with additional preprocessing, optimization and graph filtering steps for compatibility with XS2C pipeline.
 
 Please also cite the NGC paper if you use the provided causal graphs:
 
@@ -100,7 +101,6 @@ Please also cite the NGC paper if you use the provided causal graphs:
   year={2021}
 }
 ```
-
 ---
 
 ## Pretrained Models
