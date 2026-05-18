@@ -82,9 +82,24 @@ sensor_2
 ...
 sensor_n
 ```
-### Causal graph (`edge_index.pt`)
+### Causal Graph Construction
+The causal graphs (`edge_index.pt`) were constructed using Neural Granger Causality (NGC). 
+The implementation is based on the original NGC code with additional modifications:
+- Original code: [https://github.com/iancovert/Neural-GC](https://github.com/iancovert/Neural-GC)
 
-A PyTorch tensor of shape `(2, E)` saved with `torch.save()`, where `E` is the number of directed edges. Each column `[:, i]` represents a directed edge from node `edge_index[0, i]` to node `edge_index[1, i]`. Node indices correspond to the order of variables in `list.txt`.
+Please also cite the NGC paper if you use the provided causal graphs:
+
+```bibtex
+@article{tank2021neural,
+  title={Neural granger causality},
+  author={Tank, Alex and Covert, Ian and Foti, Nicholas and Shojaie, Ali and Fox, Emily B},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume={44},
+  number={8},
+  pages={4267--4279},
+  year={2021}
+}
+```
 
 ---
 
