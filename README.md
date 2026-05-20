@@ -132,7 +132,7 @@ Pretrained model weights are provided for both datasets for exact reproduction o
 
 This work builds upon the attention-based graph neural network forecasting architecture from **GDN** (Graph Neural Network-Based Anomaly Detection in Multivariate Time Series, AAAI 2021). Several components in `all_functions.py` are adapted from the original GDN implementation.
 
-- Paper: [https://arxiv.org/pdf/2106.06947.pdf](https://arxiv.org/pdf/2106.06947.pdf)
+- Paper: [https://arxiv.org/pdf/2106.06947](https://arxiv.org/abs/2106.06947)
 - Code: [https://github.com/d-ailin/GDN](https://github.com/d-ailin/GDN)
 
 If you use this repository, please also cite the original GDN paper:
