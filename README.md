@@ -156,7 +156,7 @@ pip install python-sat --pre
 
 ## Acknowledgements
 
-This work builds upon the attention-based graph neural network forecasting architecture from **GDN** (Graph Neural Network-Based Anomaly Detection in Multivariate Time Series, AAAI 2021). Several components in `all_functions.py` xs2c_detection.ipynb and are adapted from the original GDN implementation.
+This work builds upon the attention-based graph neural network forecasting architecture from **GDN** (Graph Neural Network-Based Anomaly Detection in Multivariate Time Series, AAAI 2021). Several components in `all_functions.py` and `xs2c_detection.ipynb` are adapted from the original GDN implementation.
 
 - Paper: [https://arxiv.org/pdf/2106.06947](https://arxiv.org/abs/2106.06947)
 - Code: [https://github.com/d-ailin/GDN](https://github.com/d-ailin/GDN)
