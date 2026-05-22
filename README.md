@@ -130,6 +130,8 @@ Pretrained model weights are provided for both datasets for exact reproduction o
 
 ## Requirements
 
+## Requirements
+
 - Python 3.14.4
 - PyTorch 2.11.0
 - PyTorch Geometric 2.7.0
@@ -140,6 +142,11 @@ Pretrained model weights are provided for both datasets for exact reproduction o
 - seaborn 0.13.2
 - networkx 3.6.1
 - python-sat 1.9.dev2
+
+```bash
+pip install torch-geometric pandas numpy scikit-learn matplotlib seaborn networkx
+pip install python-sat --pre
+```
 
 ---
 
