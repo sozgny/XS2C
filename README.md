@@ -132,7 +132,10 @@ Pretrained model weights are provided for both datasets for exact reproduction o
 | SWaT | `swat_best_model.pt` | `faultModel_swat.pt` | `swat_best_params.json` |
 | TEP-IDV* | `tep_best_model.pt` | `faultModel_idv*.pt` | `tep_best_params.json` |
 
-
+> **Note:** Fault model weights are provided only for the fault scenarios analyzed in the 
+> diagnosis experiments (SWaT with a selected fault period and TEP IDV1, IDV14). For other fault scenarios, 
+> fine-tuning must be performed from scratch using `xs2c_detection.ipynb`.
+> 
 > **Note on reproducibility:** Due to non-determinism in PyTorch and GPU operations, retraining from scratch — both during detection model training and fault model fine-tuning — may yield slightly different weights, leading to different symptom identification results, and attention patterns. For exact paper results, use the provided pretrained weights.
 
 ---
