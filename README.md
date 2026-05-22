@@ -19,15 +19,15 @@ XS2C/
 │   ├── swat_best_model.pt        # Pretrained weights for SWaT
 │   ├── swat_best_params.json     # Best hyperparameters for SWaT
 │   ├── tep_best_model.pt         # Pretrained weights for TEP
-│   └── tep_best_params.json      # Best hyperparameters for TEP
-│   └── faultModel_idv*.pt        # Fine-tuned faultModel for TEP-IDV*
+│   ├── tep_best_params.json      # Best hyperparameters for TEP
+│   ├── faultModel_idv*.pt        # Fine-tuned faultModel for TEP-IDV*
 │   └── faultModel_swat.pt        # Fine-tuned faultModel for SWaT-selected fault period
 ├── src/
 │   ├── all_functions.py          # util, processing, training, evaluation functions, models
 │   └── ngc.py                    # NGC implementation
 ├── TEP_datasets/
 │   ├── train.csv                 # 7-day normal operation data
-│   └── test_idv*.csv             # Fault scenarios (IDV 1–20)
+│   ├── test_idv*.csv             # Fault scenarios (IDV 1–20)
 │   └── list.txt                  # List of TEP variables
 └── README.md
 ```
@@ -182,6 +182,4 @@ If you use this repository, please also cite the original GDN paper:
 ```
 
 ---
-
-## Citation
 
