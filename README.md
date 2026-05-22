@@ -25,7 +25,7 @@ XS2C/
 │   └── ngc.py                    # NGC implementation
 ├── TEP_datasets/
 │   ├── train.csv                 # 7-day normal operation data
-│   └── test_idv*.csv             # Fault scenarios (IDV 2–20)
+│   └── test_idv*.csv             # Fault scenarios (IDV 1–20)
 └── README.md
 ```
 ---
