@@ -26,6 +26,7 @@ XS2C/
 ├── TEP_datasets/
 │   ├── train.csv                 # 7-day normal operation data
 │   └── test_idv*.csv             # Fault scenarios (IDV 1–20)
+│   └── list.txt                  # List of TEP variables
 └── README.md
 ```
 ---
@@ -126,9 +127,6 @@ Pretrained model weights are provided for both datasets for exact reproduction o
 > **Note on reproducibility:** Detection performance metrics are stable across runs with `random_seed=42`. However, due to non-determinism in PyTorch's data loading, retraining from scratch may yield slightly different symptom identification results. For exact paper results, use the provided pretrained weights.
 
 ---
-
-
-## Requirements
 
 ## Requirements
 
