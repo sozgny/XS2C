@@ -128,10 +128,11 @@ Please also cite the NGC paper if you use the provided causal graphs:
 
 Pretrained model weights are provided for both datasets for exact reproduction of paper results. To use them, set `load_model_path` to the corresponding `.pt` file path in the notebook configuration.
 
-| Dataset | Model file | Params file |
-|---|---|---|
-| SWaT | `swat_best_model.pt` | `swat_best_params.json` |
-| TEP | `tep_best_model.pt` | `tep_best_params.json` |
+| Dataset | Detection model | Fault model | Params |
+|---|---|---|---|
+| SWaT | `swat_best_model.pt` | `faultModel_swat.pt` | `swat_best_params.json` |
+| TEP-IDV* | `tep_best_model.pt` | `faultModel_idv*.pt` | `tep_best_params.json` |
+
 
 > **Note on reproducibility:** Detection performance metrics are stable across runs with `random_seed=42`. However, due to non-determinism in PyTorch's data loading, retraining from scratch may yield slightly different symptom identification results. For exact paper results, use the provided pretrained weights.
 
