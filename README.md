@@ -20,8 +20,7 @@ XS2C/
 │   ├── swat_best_params.json     # Best hyperparameters for SWaT
 │   ├── tep_best_model.pt         # Pretrained weights for TEP
 │   └── tep_best_params.json      # Best hyperparameters for TEP
-│   └── faultModel_idv1.pt        # Fine-tuned faultModel for TEP-IDV1
-│   └── faultModel_idv14.pt       # Fine-tuned faultModel for TEP-IDV14
+│   └── faultModel_idv1.pt        # Fine-tuned faultModel for TEP-IDV*
 │   └── faultModel_swat.pt        # Fine-tuned faultModel for SWaT
 ├── src/
 │   ├── all_functions.py          # util, processing, training, evaluation functions, models
