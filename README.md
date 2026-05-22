@@ -6,20 +6,28 @@ XS2C is a framework for anomaly detection and root cause diagnosis in multivaria
 
 ## Repository Structure
 
-| File | Description |
-|---|---|
-| `all_functions.py` | All model definitions, training, testing, and evaluation functions |
-| `xs2c_detection.ipynb` | Detection component — trains the GNN model, evaluates anomaly detection performance, then fine-tunes a fault model |
-| `xs2c_diagnosis.ipynb` | Diagnosis component — using identified symptoms, generates ranked diagnoses of faulty components |
-| `graph_construction.ipynb` | Graph construction notebook — builds causal graphs using Neural Granger Causality |
-| `ngc.py` | Neural Granger Causality implementation with some util functions|
-| `swat_best_model.pt` | Pretrained model weights for the SWaT dataset |
-| `swat_best_params.json` | Best hyperparameters found for the SWaT dataset |
-| `swat_edge_index.pt` | Learned causal graph (edge index) for the SWaT dataset |
-| `tep_best_model.pt` | Pretrained model weights for the TEP dataset |
-| `tep_best_params.json` | Best hyperparameters found for the TEP dataset |
-| `tep_edge_index.pt` | Learned causal graph (edge index) for the TEP dataset |
-
+```
+XS2C/
+├── graphs/
+│   ├── swat_edge_index.pt        # Learned causal graph for SWaT
+│   └── tep_edge_index.pt         # Learned causal graph for TEP
+├── notebooks/
+│   ├── xs2c_detection.ipynb      # Detection: GNN training & evaluation
+│   ├── xs2c_diagnosis.ipynb      # Diagnosis: symptom-based root cause ranking
+│   └── graph_construction.ipynb  # Causal graph construction via NGC
+├── pretrained_models/
+│   ├── swat_best_model.pt        # Pretrained weights for SWaT
+│   ├── swat_best_params.json     # Best hyperparameters for SWaT
+│   ├── tep_best_model.pt         # Pretrained weights for TEP
+│   └── tep_best_params.json      # Best hyperparameters for TEP
+├── src/
+│   ├── all_functions.py          # Model, training, evaluation functions
+│   └── ngc.py                    # Neural Granger Causality implementation
+├── TEP_datasets/
+│   ├── train.csv                 # 7-day normal operation data
+│   └── test_idv*.csv             # Fault scenarios (IDV 2–20)
+└── README.md
+```
 ---
 
 ## Datasets
