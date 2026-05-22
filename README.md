@@ -12,17 +12,17 @@ XS2C/
 │   ├── swat_edge_index.pt        # Learned causal graph for SWaT
 │   └── tep_edge_index.pt         # Learned causal graph for TEP
 ├── notebooks/
-│   ├── xs2c_detection.ipynb      # Detection: GNN training & evaluation
-│   ├── xs2c_diagnosis.ipynb      # Diagnosis: symptom-based root cause ranking
-│   └── graph_construction.ipynb  # Causal graph construction via NGC
+│   ├── xs2c_detection.ipynb      # Detection: GNN training & anomaly detection & fine-tuning a faultModel
+│   ├── xs2c_diagnosis.ipynb      # Diagnosis: symptom-based diagnosis identification
+│   └── graph_construction.ipynb  # Causal graph construction via Neural Granger Causality (NGC)
 ├── pretrained_models/
 │   ├── swat_best_model.pt        # Pretrained weights for SWaT
 │   ├── swat_best_params.json     # Best hyperparameters for SWaT
 │   ├── tep_best_model.pt         # Pretrained weights for TEP
 │   └── tep_best_params.json      # Best hyperparameters for TEP
 ├── src/
-│   ├── all_functions.py          # Model, training, evaluation functions
-│   └── ngc.py                    # Neural Granger Causality implementation
+│   ├── all_functions.py          # util, processing, training, evaluation functions, models
+│   └── ngc.py                    # NGC implementation
 ├── TEP_datasets/
 │   ├── train.csv                 # 7-day normal operation data
 │   └── test_idv*.csv             # Fault scenarios (IDV 2–20)
