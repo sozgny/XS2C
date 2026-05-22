@@ -1,6 +1,6 @@
 # XS2C — eXplainable Sensor-to-Component Framework
 
-XS2C is a framework for anomaly detection and root cause diagnosis in multivariate time series combining attention-based GNN anomaly detection with consistency-based diagnosis. After graph construction, it consists of two components: **detection** and **diagnosis**.
+XS2C is a framework for anomaly detection and diagnosis in multivariate time series combining an attention-based GNN anomaly detection with theory of consistency-based diagnosis. It consists of three main components: **graph construction**, **GNN-based anomaly detection** and **anomaly diagnosis**.
 
 ---
 
