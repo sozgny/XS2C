@@ -21,7 +21,7 @@ XS2C/
 │   ├── tep_best_model.pt         # Pretrained weights for TEP
 │   └── tep_best_params.json      # Best hyperparameters for TEP
 │   └── faultModel_idv*.pt        # Fine-tuned faultModel for TEP-IDV*
-│   └── faultModel_swat.pt        # Fine-tuned faultModel for SWaT
+│   └── faultModel_swat.pt        # Fine-tuned faultModel for SWaT-selected fault period
 ├── src/
 │   ├── all_functions.py          # util, processing, training, evaluation functions, models
 │   └── ngc.py                    # NGC implementation
@@ -133,7 +133,7 @@ Pretrained model weights are provided for both datasets for exact reproduction o
 | TEP-IDV* | `tep_best_model.pt` | `faultModel_idv*.pt` | `tep_best_params.json` |
 
 
-> **Note on reproducibility:** Detection performance metrics are stable across runs with `random_seed=42`. However, due to non-determinism in PyTorch's data loading, retraining from scratch may yield slightly different symptom identification results. For exact paper results, use the provided pretrained weights.
+> **Note on reproducibility:** Due to non-determinism in GPU operations, retraining from scratch — both during detection model training and fault model fine-tuning — may yield slightly different weights, leading to different symptom identification results, and attention patterns. For exact paper results, use the provided pretrained weights.
 
 ---
 
