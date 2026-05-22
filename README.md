@@ -39,6 +39,7 @@ The SWaT dataset is not publicly available and must be requested from the iTrust
 ### TEP (Tennessee Eastman Process)
 The TEP dataset was generated using the simulator based on the original Fortran code by J.J. Downs and E.F. Vogel (1993), with modifications by E.L. Russell, L.H. Chiang, and R.D. Braatz:
 - Simulator: [https://github.com/jkitchin/tennessee-eastman-profbraatz](https://github.com/jkitchin/tennessee-eastman-profbraatz)
+- TEP simulation datasets are included in the `TEP_datasets/` folder.
 
 Please cite the original TEP works if you use this simulator:
 
