@@ -1,0 +1,9 @@
+torch==2.11.0
+torch-geometric==2.7.0
+pandas==3.0.2
+numpy==2.4.4
+scikit-learn==1.8.0
+matplotlib==3.10.9
+seaborn==0.13.2
+networkx==3.6.1
+python-sat--pre
