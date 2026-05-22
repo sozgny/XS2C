@@ -38,9 +38,15 @@ The SWaT dataset is not publicly available and must be requested from the iTrust
 - Request access: [https://itrust.sutd.edu.sg/](https://itrust.sutd.edu.sg/)
 
 ### TEP (Tennessee Eastman Process)
-The TEP dataset was generated using the simulator based on the original Fortran code by J.J. Downs and E.F. Vogel (1993), with modifications by E.L. Russell, L.H. Chiang, and R.D. Braatz:
+The TEP dataset was generated using a Python-based simulator operating in **closed-loop** control mode.
 - Simulator: [https://github.com/jkitchin/tennessee-eastman-profbraatz](https://github.com/jkitchin/tennessee-eastman-profbraatz)
 - TEP simulation datasets are included in the `TEP_datasets/` folder.
+  - `train.csv` — 7 days of normal operation
+  - `test_idv1.csv` to `test_idv20.csv` — fault scenarios IDV(1–20), each simulated over 
+  48 hours (first 8 hours normal, followed by the fault period)
+  
+  > **Note:** IDV6 and IDV18 were terminated early (~7h and ~12h into the fault period) 
+  > due to shutdown limit violations. Measurements are recorded every 3 minutes.
 
 Please cite the original TEP works if you use this simulator:
 
@@ -150,7 +156,7 @@ pip install python-sat --pre
 
 ## Acknowledgements
 
-This work builds upon the attention-based graph neural network forecasting architecture from **GDN** (Graph Neural Network-Based Anomaly Detection in Multivariate Time Series, AAAI 2021). Several components in `all_functions.py` are adapted from the original GDN implementation.
+This work builds upon the attention-based graph neural network forecasting architecture from **GDN** (Graph Neural Network-Based Anomaly Detection in Multivariate Time Series, AAAI 2021). Several components in `all_functions.py` xs2c_detection.ipynb and are adapted from the original GDN implementation.
 
 - Paper: [https://arxiv.org/pdf/2106.06947](https://arxiv.org/abs/2106.06947)
 - Code: [https://github.com/d-ailin/GDN](https://github.com/d-ailin/GDN)
