@@ -133,7 +133,7 @@ Pretrained model weights are provided for both datasets for exact reproduction o
 | TEP-IDV* | `tep_best_model.pt` | `faultModel_idv*.pt` | `tep_best_params.json` |
 
 
-> **Note on reproducibility:** Due to non-determinism in GPU operations, retraining from scratch — both during detection model training and fault model fine-tuning — may yield slightly different weights, leading to different symptom identification results, and attention patterns. For exact paper results, use the provided pretrained weights.
+> **Note on reproducibility:** Due to non-determinism in PyTorch and GPU operations, retraining from scratch — both during detection model training and fault model fine-tuning — may yield slightly different weights, leading to different symptom identification results, and attention patterns. For exact paper results, use the provided pretrained weights.
 
 ---
 
