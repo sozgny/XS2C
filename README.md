@@ -121,10 +121,16 @@ Pretrained model weights are provided for both datasets for exact reproduction o
 
 ## Requirements
 
-- Python 3.10
-- PyTorch 2.1.0
-- PyTorch Geometric 2.4.0
-- pandas, numpy, scikit-learn, matplotlib, seaborn, networkx, pysat
+- Python 3.14.4
+- PyTorch 2.11.0
+- PyTorch Geometric 2.7.0
+- pandas 3.0.2
+- numpy 2.4.4
+- scikit-learn 1.8.0
+- matplotlib 3.10.9
+- seaborn 0.13.2
+- networkx 3.6.1
+- python-sat 1.9.dev2
 
 ---
 
